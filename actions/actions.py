@@ -11,6 +11,7 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.events import SlotSet
 
 
 class ActionHelloWorld(Action):
@@ -49,7 +50,7 @@ class ActionTellNumber(Action):
                                      {"payload": "/plus_numbers", "title": "plus"},
                                      {"payload": "/multiple_numbers", "title": "multiple"},
                                  ])
-        return []
+        return [SlotSet("number1", number1), SlotSet("number2", number2)]
 
 
 class ActionPlusNumber(Action):

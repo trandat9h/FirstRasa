@@ -35,18 +35,14 @@ slots:
     max_value: 9.0
     influence_conversation: true
     mappings:
-    - type: from_entity
-      entity: number
-      role: number1
+    - type: custom
   number2:
     type: float
     min_value: 1.0
     max_value: 9.0
     influence_conversation: true
     mappings:
-      - type: from_entity
-        entity: number
-        role: number2
+      - type: custom
 
 responses:
   utter_greet:
