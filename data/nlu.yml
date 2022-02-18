@@ -1,0 +1,119 @@
+version: "3.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: book_flight
+  examples: |
+    - I want to go to [H N](location)
+    - I want to go to [Ha Noi](location)
+    - I want to go to [HN](location)
+    - I want to go to Da Nang
+    - I want to go to [New York](location)
+
+- intent: inquire_number
+  examples: |
+    - I want to calculate number [2](number)
+    - I want to calculate number [3](number)
+    - I want to calculate number [0](number)
+    - I want to calculate number [11](number)
+    - I want to calculate number [16](number)
+
+- intent: calculate_numbers
+  examples: |
+    - I want to calculate number [2]{"entity":"number", "role":"number1"} and [3]{"entity":"number", "role":"number2"}
+    - I want to calculate number [3]{"entity":"number", "role":"number1"} and [9]{"entity":"number", "role":"number2"}
+    - I want to calculate number [0]{"entity":"number", "role":"number1"} and [10]{"entity":"number", "role":"number2"}
+    - I want to calculate number [11]{"entity":"number", "role":"number1"} and [3]{"entity":"number", "role":"number2"}
+    - I want to calculate number [16]{"entity":"number", "role":"number1"} and [13]{"entity":"number", "role":"number2"}
+
+- intent: multiple_numbers
+  examples: |
+    - multiple
+    - multiple numbers
+    - multiple please
+
+- intent: plus_numbers
+  examples: |
+    - plus
+    - plus numbers
+    - plus please
